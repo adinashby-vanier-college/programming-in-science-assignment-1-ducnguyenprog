@@ -28,10 +28,9 @@ def check_number(number):
 # Function 4: For Loop – Making a Star Shape
 # This function should return a string representing a star shape.
 def star_shape(rows):
-    rows = {"******"}
-    
-    for char in range(rows):
-        return char
+    for x in range(1,rows+1):
+        print ("*" * x)
+        
 
 # Function 5: While Loop – Counting Multiples of 3
 # This function should return a list of numbers from 1 to limit, replacing multiples of 3 with "Multiple of 3".
@@ -45,4 +44,4 @@ def sum_of_even_numbers(start, end):
     # TODO: Implement this function
     pass  # Replace with your code
 
-print(star_shape(5))
+
