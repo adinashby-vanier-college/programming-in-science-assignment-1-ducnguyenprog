@@ -43,23 +43,23 @@ def count_multiples_of_3(limit):
     x = 1
 
     while x <= limit:
-        result = (x)
         if x % 3 == 0 :
-            result += ("\n")
-            result += ("Multiple of three")
+            result += ("Multiple of 3") + ("\n")
         else:
-            result += ("\n")
+            result += str(x) + ("\n")
+        x += 1
     
-    x =+ 1
-
-    return (result)
+    return (result.strip())
 
 
 
 # Function 6: Sum of Even Numbers in a Range
 # This function should calculate and return the sum of even numbers within a given range.
 def sum_of_even_numbers(start, end):
-    print
+    result = 0
 
-    
-print(count_multiples_of_3(20))
+    for x in range(start, end + 1):
+        if x % 2 == 0:
+            result += (x)
+
+    return (result)
